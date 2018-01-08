@@ -1,0 +1,13 @@
+Editor Problems:
+If imports don't work, mark main package as sources root
+
+If getting error where "new_file = eval(default_path_parts[-1][:-4])" thinks a
+module does not exist, make sure "from core.config.config import *" is still at
+the top of the file.
+
+When updating version, copy and paste old project and rename with new version.
+Mark old project as excluded and mark main in new project as source's root.
+Change version in PyCharm run configurations script and working directory.
+Change version in compile.bat and reupload to floobits by going to
+"Tools>Floobits>Share Project Publicly."
+Change requirements.txt path in File>Settings>Tools>Python Integrated Tools>The_Ensuing_Panic>Package Requirements File
